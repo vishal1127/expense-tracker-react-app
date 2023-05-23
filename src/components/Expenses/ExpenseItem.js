@@ -5,9 +5,9 @@ import Card from "../UI/Card";
 import "./ExpenseItem.css";
 
 const ExpenseItem = (props) => {
-  const [price, setPrice] = useState(props.price);
-  const updatePrice = () => {
-    setPrice("$100");
+  const [amount, setAmount] = useState(props.amount);
+  const updateAmount = () => {
+    setAmount("$100");
   };
   const [title, setTitle] = useState(props.title);
   const deleteHandler = () => {
@@ -17,9 +17,9 @@ const ExpenseItem = (props) => {
     <>
       <Card className="expense-item">
         <ExpenseDate date={props.date} />
-        <ExpenseDetails title={title} price={price} />
+        <ExpenseDetails title={title} amount={amount} />
         <button onClick={deleteHandler}>Delete expense</button>
-        <button onClick={updatePrice}>Change price</button>
+        <button onClick={updateAmount}>Change amount</button>
       </Card>
     </>
   );
