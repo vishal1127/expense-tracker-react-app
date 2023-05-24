@@ -4,9 +4,9 @@ import Expenses from "./components/Expenses/Expenses";
 import NewExpense from "./components/NewExpense/NewExpense";
 
 const DUMMY_EXPENSES = [
-  { id: "e1", title: "Food", date: new Date(2023, 2, 4), amount: "50" },
-  { id: "e2", title: "Petrol", date: new Date(2023, 2, 16), amount: "100" },
-  { id: "e3", title: "Movie", date: new Date(2023, 2, 22), amount: "200" },
+  { id: "e1", title: "Food", date: new Date(2023, 0, 4), amount: 50 },
+  { id: "e2", title: "Petrol", date: new Date(2023, 1, 16), amount: 100 },
+  { id: "e3", title: "Movie", date: new Date(2023, 2, 22), amount: 200 },
 ];
 
 const App = () => {
